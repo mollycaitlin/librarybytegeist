@@ -1,0 +1,43 @@
+title: Library Bytegeist
+description: This podcast is a collection of audio stories from the libraries, archives, and museums of New York City. It is brought to you by the Metropolitan New York Library Council, where the libraries and archives of New York comes together to learn, share ideas, and collaborate.
+baseurl: ""
+url: "http://www.metro.org"
+
+# Markdown settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  add_charset: true
+  sass_dir: assets/sass
+  style: :compressed
+
+# Build settings
+exclude:
+  - package.json
+  - README.md
+  - CNAME
+  - assets/sass
+
+# Plugin settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Podcast Feed settings
+title:          Library Bytegeist
+email:          podcast@metro.org
+description:    "This podcast is a collection of audio stories from the libraries, archives, and museums of New York City. It is brought to you by the Metropolitan New York Library Council, where the libraries and archives of New York comes together to learn, share ideas, and collaborate."
+subtitle:       "A podcast about saving your podcast."
+url:            http://www.metro.org/
+language:       en-us
+author:         Molly Schwartz
+copyright:      "CC BY 4.0"
+
+feed:
+  collections:
+    episodes:
+      path: "/episodes.xml"
+
+collections:
+  episodes:
